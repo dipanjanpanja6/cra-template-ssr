@@ -22,6 +22,7 @@ export default function template(title, content = "") {
             ${content}
         </div>
     </div>
+    <script src="assets/client.js"></script>
 </body>`
 
   return page
