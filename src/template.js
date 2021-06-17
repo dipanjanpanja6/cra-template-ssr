@@ -1,4 +1,4 @@
-export default function template(title, content = "") {
+export default function template(title, initialState = {}, content = "") {
   let page = `<!DOCTYPE html>
 <html lang="en">
 
@@ -18,10 +18,11 @@ export default function template(title, content = "") {
 
 <body>
     <div class="content">
-        <div id="app" class="wrap-inner">
-            ${content}
-        </div>
+        <div id="app" class="wrap-inner">${content}</div>
     </div>
+    <script>
+        window.__STATE__ = ${JSON.stringify(initialState)}
+    </script>
     <script src="assets/client.js"></script>
 </body>`
 

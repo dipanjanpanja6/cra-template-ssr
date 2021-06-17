@@ -1,5 +1,7 @@
 import React from "react"
 import { hydrate } from "react-dom"
- import App from "./components/app"
+import App from "./components/app"
+const props = window.__STATE__
+delete window.__STATE__
 
-hydrate(<App />, document.querySelector("#app"))
+hydrate(<App props={props} />, document.querySelector("#app"))
