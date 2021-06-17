@@ -3,9 +3,9 @@ import { renderToString } from "react-dom/server"
 
 import App from "./components/app"
 
-module.exports = function render(someJsonData) {
+module.exports = function render(props) {
   // you can setup redux or context api or pass as a props
-  let content = renderToString(<App props={someJsonData} />)
+  let content = renderToString(<App props={props} />)
 
-  return { content }
+  return { content, props }
 }
