@@ -4,7 +4,6 @@ export default function template(title, initialState = {}, content = "") {
 
 <head>
     <meta charset="utf-8">
-    <meta charset="utf-8" />
     <link rel="icon" href="media/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
